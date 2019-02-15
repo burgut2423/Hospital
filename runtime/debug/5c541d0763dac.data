@@ -1,0 +1,212 @@
+a:12:{s:6:"config";s:1410:"a:5:{s:10:"phpVersion";s:6:"7.1.11";s:10:"yiiVersion";s:10:"2.0.13-dev";s:11:"application";a:8:{s:3:"yii";s:10:"2.0.13-dev";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:8:"language";s:5:"en-US";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:6:"7.1.11";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:5:{s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:52:"F:\NODIR\SOFTS\learn\vendor/yiisoft/yii2-swiftmailer";}}s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:50:"F:\NODIR\SOFTS\learn\vendor/yiisoft/yii2-bootstrap";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:8:"2.0.12.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:46:"F:\NODIR\SOFTS\learn\vendor/yiisoft/yii2-debug";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:44:"F:\NODIR\SOFTS\learn\vendor/yiisoft/yii2-gii";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:46:"F:\NODIR\SOFTS\learn\vendor/yiisoft/yii2-faker";}}}}";s:7:"request";s:5642:"a:14:{s:7:"flashes";a:0:{}s:10:"statusCode";i:302;s:14:"requestHeaders";a:13:{s:4:"host";s:5:"my.uz";s:10:"connection";s:10:"keep-alive";s:14:"content-length";s:3:"148";s:13:"cache-control";s:9:"max-age=0";s:6:"origin";s:12:"http://my.uz";s:25:"upgrade-insecure-requests";s:1:"1";s:12:"content-type";s:33:"application/x-www-form-urlencoded";s:10:"user-agent";s:115:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36";s:6:"accept";s:85:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";s:7:"referer";s:41:"http://my.uz/registrator/client/view?id=9";s:15:"accept-encoding";s:13:"gzip, deflate";s:15:"accept-language";s:14:"en-US,en;q=0.9";s:6:"cookie";s:210:"_csrf=aceaa7deea702f4d1d1e37eb926464f2738485aeba23b96f915f9a173d3f2c9ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pftA-5IhxcwdbBROVPdqiubA_CF95Z0l%22%3B%7D; PHPSESSID=rnqd97kujdkhba98r3vm9p4ctt";}s:15:"responseHeaders";a:6:{s:12:"X-Powered-By";s:10:"PHP/7.1.11";s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:35:"no-store, no-cache, must-revalidate";s:6:"Pragma";s:8:"no-cache";s:8:"Location";s:24:"http://my.uz/registrator";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";}s:5:"route";s:23:"registrator/client/view";s:6:"action";s:66:"app\modules\registrator\controllers\ClientController::actionView()";s:12:"actionParams";a:1:{i:0;s:1:"9";}s:11:"requestBody";a:3:{s:12:"Content Type";s:33:"application/x-www-form-urlencoded";s:3:"Raw";s:148:"_csrf=nlvO7Inrp-OcteDzzRU6hqKZhEuiLS_dkYn66vON__HuPbqtpN7ui-TWl5evV2jJ9MngOstYTZzOyrzTxtfPnQ%3D%3D&Myusers%5Bid%5D=4&Clients%5Bid%5D=9&login-button=";s:17:"Decoded to Params";a:4:{s:5:"_csrf";s:88:"nlvO7Inrp-OcteDzzRU6hqKZhEuiLS_dkYn66vON__HuPbqtpN7ui-TWl5evV2jJ9MngOstYTZzOyrzTxtfPnQ==";s:7:"Myusers";a:1:{s:2:"id";s:1:"4";}s:7:"Clients";a:1:{s:2:"id";s:1:"9";}s:12:"login-button";s:0:"";}}s:6:"SERVER";a:55:{s:16:"REDIRECT_MIBDIRS";s:24:"C:/xampp/php/extras/mibs";s:19:"REDIRECT_MYSQL_HOME";s:16:"\xampp\mysql\bin";s:21:"REDIRECT_OPENSSL_CONF";s:31:"C:/xampp/apache/bin/openssl.cnf";s:29:"REDIRECT_PHP_PEAR_SYSCONF_DIR";s:10:"\xampp\php";s:14:"REDIRECT_PHPRC";s:10:"\xampp\php";s:12:"REDIRECT_TMP";s:10:"\xampp\tmp";s:15:"REDIRECT_STATUS";s:3:"200";s:7:"MIBDIRS";s:24:"C:/xampp/php/extras/mibs";s:10:"MYSQL_HOME";s:16:"\xampp\mysql\bin";s:12:"OPENSSL_CONF";s:31:"C:/xampp/apache/bin/openssl.cnf";s:20:"PHP_PEAR_SYSCONF_DIR";s:10:"\xampp\php";s:5:"PHPRC";s:10:"\xampp\php";s:3:"TMP";s:10:"\xampp\tmp";s:9:"HTTP_HOST";s:5:"my.uz";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:14:"CONTENT_LENGTH";s:3:"148";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:11:"HTTP_ORIGIN";s:12:"http://my.uz";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:15:"HTTP_USER_AGENT";s:115:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36";s:11:"HTTP_ACCEPT";s:85:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";s:12:"HTTP_REFERER";s:41:"http://my.uz/registrator/client/view?id=9";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"en-US,en;q=0.9";s:11:"HTTP_COOKIE";s:210:"_csrf=aceaa7deea702f4d1d1e37eb926464f2738485aeba23b96f915f9a173d3f2c9ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pftA-5IhxcwdbBROVPdqiubA_CF95Z0l%22%3B%7D; PHPSESSID=rnqd97kujdkhba98r3vm9p4ctt";s:4:"PATH";s:283:"C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Smart Projects\IsoBuster";s:10:"SystemRoot";s:10:"C:\Windows";s:7:"COMSPEC";s:27:"C:\Windows\system32\cmd.exe";s:7:"PATHEXT";s:53:".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC";s:6:"WINDIR";s:10:"C:\Windows";s:16:"SERVER_SIGNATURE";s:91:"<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/7.1.11 Server at my.uz Port 80</address>
+";s:15:"SERVER_SOFTWARE";s:47:"Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/7.1.11";s:11:"SERVER_NAME";s:5:"my.uz";s:11:"SERVER_ADDR";s:9:"127.0.0.1";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:9:"127.0.0.1";s:13:"DOCUMENT_ROOT";s:24:"F:/NODIR/SOFTS/learn/web";s:14:"REQUEST_SCHEME";s:4:"http";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:24:"F:/NODIR/SOFTS/learn/web";s:12:"SERVER_ADMIN";s:20:"postmaster@localhost";s:15:"SCRIPT_FILENAME";s:34:"F:/NODIR/SOFTS/learn/web/index.php";s:11:"REMOTE_PORT";s:5:"52635";s:12:"REDIRECT_URL";s:24:"/registrator/client/view";s:21:"REDIRECT_QUERY_STRING";s:4:"id=9";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:4:"id=9";s:11:"REQUEST_URI";s:29:"/registrator/client/view?id=9";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:18:"REQUEST_TIME_FLOAT";d:1549016327.304;s:12:"REQUEST_TIME";i:1549016327;}s:3:"GET";a:1:{s:2:"id";s:1:"9";}s:4:"POST";a:4:{s:5:"_csrf";s:88:"nlvO7Inrp-OcteDzzRU6hqKZhEuiLS_dkYn66vON__HuPbqtpN7ui-TWl5evV2jJ9MngOstYTZzOyrzTxtfPnQ==";s:7:"Myusers";a:1:{s:2:"id";s:1:"4";}s:7:"Clients";a:1:{s:2:"id";s:1:"9";}s:12:"login-button";s:0:"";}s:6:"COOKIE";a:2:{s:5:"_csrf";s:130:"aceaa7deea702f4d1d1e37eb926464f2738485aeba23b96f915f9a173d3f2c9ca:2:{i:0;s:5:"_csrf";i:1;s:32:"pftA-5IhxcwdbBROVPdqiubA_CF95Z0l";}";s:9:"PHPSESSID";s:26:"rnqd97kujdkhba98r3vm9p4ctt";}s:5:"FILES";a:0:{}s:7:"SESSION";a:2:{s:7:"__flash";a:0:{}s:4:"__id";i:2;}}";s:3:"log";s:8067:"a:1:{s:8:"messages";a:22:{i:0;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1549016327.34997;i:4;a:0:{}i:5;i:1879776;}i:1;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1549016327.349995;i:4;a:0:{}i:5;i:1880584;}i:2;a:6:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1549016327.365012;i:4;a:0:{}i:5;i:2664944;}i:3;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `users`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.381843;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3872680;}i:4;a:6:{i:0;s:56:"Opening DB connection: mysql:host=localhost;dbname=learn";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1549016327.381938;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3874416;}i:9;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'users' AND kcu.table_name = 'users'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.399052;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3910608;}i:12;a:6:{i:0;s:34:"SELECT * FROM `users` WHERE `id`=2";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.403116;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4163984;}i:15;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1549016327.408422;i:4;a:0:{}i:5;i:4301944;}i:16;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1549016327.411638;i:4;a:0:{}i:5;i:4470344;}i:17;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1549016327.412305;i:4;a:0:{}i:5;i:4492552;}i:24;a:6:{i:0;s:42:"Route requested: 'registrator/client/view'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1549016327.41452;i:4;a:0:{}i:5;i:4630800;}i:25;a:6:{i:0;s:27:"Loading module: registrator";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1549016327.414532;i:4;a:0:{}i:5;i:4632000;}i:26;a:6:{i:0;s:37:"Route to run: registrator/client/view";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1549016327.416669;i:4;a:0:{}i:5;i:4698304;}i:27;a:6:{i:0;s:82:"Running action: app\modules\registrator\controllers\ClientController::actionView()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1549016327.420349;i:4;a:0:{}i:5;i:4946872;}i:28;a:6:{i:0;s:60:"Failed to set unsafe attribute 'id' in 'app\models\Myusers'.";i:1;i:8;i:2;s:33:"yii\base\Model::onUnsafeAttribute";i:3;d:1549016327.425838;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:74;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:5179080;}i:29;a:6:{i:0;s:60:"Failed to set unsafe attribute 'id' in 'app\models\Clients'.";i:1;i:8;i:2;s:33:"yii\base\Model::onUnsafeAttribute";i:3;d:1549016327.425994;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:74;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}i:5;i:5183776;}i:30;a:6:{i:0;s:43:"SELECT * FROM `visit` WHERE `client_id`='9'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.4266;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5202192;}i:33;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `visit`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.427091;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5208544;}i:36;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'visit' AND kcu.table_name = 'visit'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.442543;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5219000;}i:39;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `query`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.443794;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:59;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5233104;}i:42;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'query' AND kcu.table_name = 'query'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.4488;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:59;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5244792;}i:45;a:6:{i:0;s:126:"INSERT INTO `query` (`visit_id`, `doctor_id`, `add_time`, `resive_time`, `end_time`, `resive_state`) VALUES (4, 4, 4, 0, 0, 0)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1549016327.450143;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:65;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5251872;}}}";s:9:"profiling";s:11545:"a:3:{s:6:"memory";i:5329816;s:4:"time";d:0.26821112632751465;s:8:"messages";a:20:{i:5;a:6:{i:0;s:56:"Opening DB connection: mysql:host=localhost;dbname=learn";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1549016327.381965;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3875232;}i:6;a:6:{i:0;s:56:"Opening DB connection: mysql:host=localhost;dbname=learn";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1549016327.383433;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3889128;}i:7;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `users`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.383495;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3889336;}i:8;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `users`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.398124;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3896616;}i:10;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'users' AND kcu.table_name = 'users'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.399102;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3912752;}i:11;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'users' AND kcu.table_name = 'users'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.399671;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3913968;}i:13;a:6:{i:0;s:34:"SELECT * FROM `users` WHERE `id`=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.403199;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4164168;}i:14;a:6:{i:0;s:34:"SELECT * FROM `users` WHERE `id`=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.403634;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4165840;}i:31;a:6:{i:0;s:43:"SELECT * FROM `visit` WHERE `client_id`='9'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.426631;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5203312;}i:32;a:6:{i:0;s:43:"SELECT * FROM `visit` WHERE `client_id`='9'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.427028;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5204848;}i:34;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `visit`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.427116;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5209568;}i:35;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `visit`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.44231;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5215240;}i:37;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'visit' AND kcu.table_name = 'visit'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.442575;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5221144;}i:38;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'visit' AND kcu.table_name = 'visit'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.443056;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5222232;}i:40;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `query`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.443826;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:59;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5234400;}i:41;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `query`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.448542;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:59;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5241056;}i:43;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'query' AND kcu.table_name = 'query'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.448833;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:59;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5247208;}i:44;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'query' AND kcu.table_name = 'query'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.449294;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:59;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5248568;}i:46;a:6:{i:0;s:126:"INSERT INTO `query` (`visit_id`, `doctor_id`, `add_time`, `resive_time`, `end_time`, `resive_state`) VALUES (4, 4, 4, 0, 0, 0)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1549016327.450184;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:65;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5252560;}i:47;a:6:{i:0;s:126:"INSERT INTO `query` (`visit_id`, `doctor_id`, `add_time`, `resive_time`, `end_time`, `resive_state`) VALUES (4, 4, 4, 0, 0, 0)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1549016327.586229;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:65;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5253656;}}}";s:2:"db";s:10797:"a:1:{s:8:"messages";a:18:{i:7;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `users`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.383495;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3889336;}i:8;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `users`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.398124;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3896616;}i:10;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'users' AND kcu.table_name = 'users'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.399102;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3912752;}i:11;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'users' AND kcu.table_name = 'users'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.399671;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:3913968;}i:13;a:6:{i:0;s:34:"SELECT * FROM `users` WHERE `id`=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.403199;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4164168;}i:14;a:6:{i:0;s:34:"SELECT * FROM `users` WHERE `id`=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.403634;i:4;a:1:{i:0;a:5:{s:4:"file";s:39:"F:\NODIR\SOFTS\learn\models\Myusers.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4165840;}i:31;a:6:{i:0;s:43:"SELECT * FROM `visit` WHERE `client_id`='9'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.426631;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5203312;}i:32;a:6:{i:0;s:43:"SELECT * FROM `visit` WHERE `client_id`='9'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.427028;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5204848;}i:34;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `visit`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.427116;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5209568;}i:35;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `visit`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.44231;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5215240;}i:37;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'visit' AND kcu.table_name = 'visit'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.442575;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5221144;}i:38;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'visit' AND kcu.table_name = 'visit'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.443056;i:4;a:1:{i:0;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5222232;}i:40;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `query`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.443826;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:59;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5234400;}i:41;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `query`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.448542;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:59;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5241056;}i:43;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'query' AND kcu.table_name = 'query'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.448833;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:59;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5247208;}i:44;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'query' AND kcu.table_name = 'query'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1549016327.449294;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:59;s:8:"function";s:5:"__set";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5248568;}i:46;a:6:{i:0;s:126:"INSERT INTO `query` (`visit_id`, `doctor_id`, `add_time`, `resive_time`, `end_time`, `resive_state`) VALUES (4, 4, 4, 0, 0, 0)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1549016327.450184;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:65;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5252560;}i:47;a:6:{i:0;s:126:"INSERT INTO `query` (`visit_id`, `doctor_id`, `add_time`, `resive_time`, `end_time`, `resive_state`) VALUES (4, 4, 4, 0, 0, 0)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1549016327.586229;i:4;a:2:{i:0;a:5:{s:4:"file";s:37:"F:\NODIR\SOFTS\learn\models\Sorov.php";s:4:"line";i:65;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:73:"F:\NODIR\SOFTS\learn\modules\registrator\controllers\ClientController.php";s:4:"line";i:83;s:8:"function";s:6:"create";s:5:"class";s:16:"app\models\Sorov";s:4:"type";s:2:"::";}}i:5;i:5253656;}}}";s:6:"assets";s:6:"a:0:{}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:91:"a:3:{s:5:"start";d:1549016327.330932;s:3:"end";d:1549016327.599765;s:6:"memory";i:5329816;}";s:4:"user";s:827:"a:5:{s:2:"id";i:2;s:8:"identity";a:8:{s:2:"id";s:1:"2";s:4:"name";s:21:"'Palonkasov Palonkas'";s:3:"age";s:10:"'1992 yil'";s:6:"gender";s:7:"'erkak'";s:8:"username";s:5:"'reg'";s:8:"password";s:5:"'reg'";s:7:"authkey";s:5:"'reg'";s:4:"role";s:1:"2";}s:10:"attributes";a:8:{i:0;a:2:{s:9:"attribute";s:2:"id";s:5:"label";s:2:"ID";}i:1;a:2:{s:9:"attribute";s:4:"name";s:5:"label";s:4:"Name";}i:2;a:2:{s:9:"attribute";s:3:"age";s:5:"label";s:3:"Age";}i:3;a:2:{s:9:"attribute";s:6:"gender";s:5:"label";s:6:"Gender";}i:4;a:2:{s:9:"attribute";s:8:"username";s:5:"label";s:8:"Username";}i:5;a:2:{s:9:"attribute";s:8:"password";s:5:"label";s:8:"Password";}i:6;a:2:{s:9:"attribute";s:7:"authkey";s:5:"label";s:7:"Authkey";}i:7;a:2:{s:9:"attribute";s:4:"role";s:5:"label";s:4:"Role";}}s:13:"rolesProvider";N;s:19:"permissionsProvider";N;}";s:6:"router";s:1162:"a:1:{s:8:"messages";a:6:{i:18;a:6:{i:0;a:3:{s:4:"rule";s:3:"gii";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1549016327.414459;i:4;a:0:{}i:5;i:4628104;}i:19;a:6:{i:0;a:3:{s:4:"rule";s:12:"gii/<id:\w+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1549016327.414475;i:4;a:0:{}i:5;i:4628680;}i:20;a:6:{i:0;a:3:{s:4:"rule";s:41:"gii/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1549016327.414486;i:4;a:0:{}i:5;i:4629288;}i:21;a:6:{i:0;a:3:{s:4:"rule";s:5:"debug";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1549016327.414495;i:4;a:0:{}i:5;i:4629856;}i:22;a:6:{i:0;a:3:{s:4:"rule";s:43:"debug/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1549016327.414503;i:4;a:0:{}i:5;i:4630464;}i:23;a:6:{i:0;s:55:"No matching URL rules. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1549016327.414509;i:4;a:0:{}i:5;i:4630736;}}}";s:7:"summary";a:9:{s:3:"tag";s:13:"5c541d0763dac";s:3:"url";s:41:"http://my.uz/registrator/client/view?id=9";s:4:"ajax";i:0;s:6:"method";s:4:"POST";s:2:"ip";s:9:"127.0.0.1";s:4:"time";d:1549016327.304;s:10:"statusCode";i:302;s:8:"sqlCount";i:9;s:9:"mailCount";i:0;}s:10:"exceptions";a:0:{}}
