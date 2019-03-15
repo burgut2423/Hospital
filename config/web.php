@@ -9,7 +9,7 @@ $config = [
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm' => '@vendor/npm-asset',
     ],
     'components' => [
         'request' => [
@@ -20,7 +20,7 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\Myusers',
+            'identityClass' => 'app\models\User',
             'enableAutoLogin' => false,
         ],
         'errorHandler' => [
@@ -43,18 +43,22 @@ $config = [
             ],
         ],
         'db' => $db,
-     
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-   
+
     ],
     'params' => $params,
 
     'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\AdminModule',
+
+        ],
         'registrator' => [
             'class' => 'app\modules\registrator\RegistratorModule',
         ],
