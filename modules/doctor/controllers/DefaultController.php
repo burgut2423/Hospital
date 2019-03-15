@@ -1,19 +1,28 @@
 <?php
 
 namespace app\modules\doctor\controllers;
-
+use app\models\Query;
+use app\models\QuerySearch;
+use app\models\User;
+use Yii;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 
 /**
  * Default controller for the `doctor` module
+ *
  */
 class DefaultController extends Controller
 {
     /**
      * Renders the index view for the module
      * @return string
+     * @var  $query `app\models\Visit`
+     * @var $searchModel `app\models\QuerySearch`
+     */
+    /**
+     * @inheritdoc
      */
     public function behaviors()
     {
@@ -25,7 +34,7 @@ class DefaultController extends Controller
                     [
                         'actions' => ['logout','index','create','update'],
                         'allow' => true,
-                        'roles' => ['@'],
+                        'roles' =>['@'],
                     ],
                 ],
             ],
@@ -37,12 +46,16 @@ class DefaultController extends Controller
             ],
         ];
     }
-
-
-
-
+    /**
+     * Displays a single Receive model.
+     * @param string $query
+     * @return mixed
+     */
     public function actionIndex()
-    {
-        return $this->render('index');
-    }
+     {
+         $query = Query::find()->where(['user_id'=>Yii::$app->user->id])->all();
+         return $this->render('index', [
+             'query'=>$query,
+         ]);
+     }
 }
