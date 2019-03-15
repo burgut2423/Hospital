@@ -2,20 +2,20 @@
 
 namespace app\controllers;
 
-use app\models\Doctor;
-use app\models\DoctorType;
-use app\models\Myusers;
-use app\models\Registrator;
-use app\models\SignupForm;
 use app\models\User;
 use Yii;
 use yii\filters\AccessControl;
+use yii\rbac\Role;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+/**
+ * Class SiteController
+ * @package app\controllers
+ */
 class SiteController extends Controller
 {
     /**
@@ -83,17 +83,16 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-         //   return $this->goBack();
-            $user =Yii::$app->user->identity->getId();
-            $role =Myusers::findOne(['id'=>$user]);
-              $soni = $role->role;
-              switch ($soni){
-                  // modullar soni chekli ko'rinishda bo'ladi va redirict almashtirish uchun yuqorqi menuni
-                  case 1:  return $this->redirect("/admin");      break;
-                  case 2 : return $this->redirect("/registrator");break;
-                  case 3 : return $this->redirect("/doctor");     break;
-              }
+            $role = User::getRole(Yii::$app->user->identity->getId());
 
+            switch ($role) {
+                case  User::ROLE_ADMIN :
+                    $this->redirect('/admin');
+                    break;
+                case User::ROLE_DOCTOR:
+                    $this->redirect('/doctor');
+                    break;
+            }
 
         }
         return $this->render('login', [
@@ -140,10 +139,8 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+     public function actionMy(){
 
-
-
-
-
+     }
 
 }
