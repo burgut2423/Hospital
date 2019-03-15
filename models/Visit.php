@@ -8,11 +8,13 @@ use Yii;
  * This is the model class for table "visit".
  *
  * @property integer $id
- * @property integer $client_Id
+ * @property integer $client_id
  * @property integer $visit_time
- * @property integer $reg_id
  * @property integer $out_time
  * @property integer $inside
+ *
+ * @property Query[] $queries
+ * @property Patient $client
  */
 class Visit extends \yii\db\ActiveRecord
 {
@@ -30,8 +32,9 @@ class Visit extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['client_Id', 'visit_time', 'reg_id', 'out_time', 'inside'], 'required'],
-            [['client_Id', 'visit_time', 'reg_id', 'out_time', 'inside'], 'integer'],
+            [['client_id', 'visit_time', 'out_time', 'inside'], 'required'],
+            [['client_id', 'visit_time', 'out_time', 'inside'], 'integer'],
+            [['client_id'], 'exist', 'skipOnError' => true, 'targetClass' => Patient::className(), 'targetAttribute' => ['client_id' => 'id']],
         ];
     }
 
@@ -42,23 +45,33 @@ class Visit extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'client_Id' => 'Client  ID',
+            'client_id' => 'Client ID',
             'visit_time' => 'Visit Time',
-            'reg_id' => 'Reg ID',
             'out_time' => 'Out Time',
             'inside' => 'Inside',
         ];
     }
-    public static function create($client_id ,$userid){
-        $stmt = Visit::findAll(['client_id'=>$client_id,'inside'=>1]);
-        if(!$stmt){
-            $visit = new Visit;
-            $visit->client_Id = $client_id;
-            $visit->visit_time = time();
-            $visit->reg_id = $userid;
-            $visit->out_time = 0;
-            $visit->inside = 1;
-            $visit->save();
-        }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getQueries()
+    {
+        return $this->hasMany(Query::className(), ['visit_id' => 'id'])->inverseOf('visit');
     }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getClient()
+    {
+        return $this->hasOne(Patient::className(), ['id' => 'client_id'])->inverseOf('visits');
+    }
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getReceives(){
+        return $this->hasOne(Receive::className(),['visit_id'=>'id']);
+    }
+
 }
