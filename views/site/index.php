@@ -11,3 +11,5 @@ $this->title = 'My Yii Application';
     </div>
          <h1 class="active text-center text-danger  ">Raxmat!!</h1>
 </div>
+
+
