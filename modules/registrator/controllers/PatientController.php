@@ -16,6 +16,7 @@ use yii\filters\VerbFilter;
  */
 class PatientController extends Controller
 {
+     public $layout='main2';
     /**
      * @inheritdoc
      */

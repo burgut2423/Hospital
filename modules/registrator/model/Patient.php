@@ -19,7 +19,6 @@ use yii\helpers\ArrayHelper;
  * @property string $work_phone
  * @property string $work
  * @property integer $gender_id
- *
  * @property Gender $gender
  * @property Visit[] $visits
  */
@@ -39,7 +38,7 @@ class Patient extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'surname', 'lastname', 'midname', 'address', 'phone_number', 'work_phone', 'work', 'gender_id'], 'required'],
+            [['name', 'surname','lastname', 'midname', 'address', 'phone_number', 'work_phone', 'work', 'gender_id'], 'required'],
             [['address'], 'string'],
             [['gender_id'], 'integer'],
             [['name', 'surname', 'lastname', 'midname', 'phone_number', 'work_phone'], 'string', 'max' => 30],

@@ -7,18 +7,13 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\Receive */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-
-<div class="receive-form ">
-    <?php
+     <?php
      $patientname = \app\models\Visit::findOne(['id' => $_GET['visit_id']])->client->name;
      ?>
-    <h4 class="text-center bg-aqua">
-           Bemor ismi:<?=$patientname;?> umumiy tashxisni yozing
-    </h4>
+<div class="receive-form">   
     <?php $form = ActiveForm::begin(); ?>
-
     <?= $form->field($model, 'visit_id')->hiddenInput(['value' => $_GET['visit_id']])->label(false) ?>
-    <div class="col-md-12">
+    
         <div class="col-md-3">
             <?= $form->field($model, 'complaint')->textarea(['rows' => 1]) ?>
 
@@ -71,13 +66,15 @@ use yii\widgets\ActiveForm;
             <?= $form->field($model, 'receive_time')->hiddenInput(['value' => time()])->label(false) ?>
 
             <?= $form->field($model, 'doctor_id')->hiddenInput(['value' => Yii::$app->user->id])->label(false) ?>
-            <div class="form-group">
-                <?= Html::submitButton($model->isNewRecord ? 'Tastiqlash' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success flat' : 'btn btn-primary']) ?>
-            </div>
-
+              <div class="w3-animate-right">
+            <?= Html::submitButton($model->isNewRecord ? 'Tastiqlash' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success flat' : 'btn btn-primary']) ?>
+            <?php ActiveForm::end(); ?>
+              </div>           
+               
+            
+    
         </div>
-    </div>
-
-    <?php ActiveForm::end(); ?>
-
+    
 </div>
+
+

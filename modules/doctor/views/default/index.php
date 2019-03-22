@@ -1,14 +1,20 @@
 <?php
+
+use app\models\Visit;
 use yii\bootstrap\Html;
 use yii\grid\GridView;
+use timurmelnikov\widgets\WebcamShoot;
+use yii\widgets\LinkPager;
 
 /*  @var $searchModel `app\models\QuerySearch` */
 /*  @var $dataProvider yii\data\ActiveDataProvider */
 /* @var  $query mixed app\models\Query */
 /* @var  $querilar ,$mymodel  app\models\Query */
+/*  @var  $qaluqilinganlar app\models\Visit*/
 /* @var  $this yii\web\View */
 ?>
-<div class="container">
+
+<div class="w3-container">
     <h2>Doctor <?= \app\models\User::getUsername(Yii::$app->user->id) ?> ni qabulidagilar</h2>
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">Navbatdagilar</a></li>
@@ -17,16 +23,13 @@ use yii\grid\GridView;
         <!--        <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>-->
     </ul>
 
-    <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-            <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
-                <div class="col-sm-6">
-
-                </div>
+    <div class="tab-content ">
+        <div id="home" class="tab-pane fade in active w3-animate-right">
+           <div id="example1_wrapper" class="w3-table w3-bordered w3-striped w3-card-4 ">
             </div>
-            <div class="row">
+            <div class="w3-row">
                 <div class="col-sm-12">
-                    <table id="example1" class="table table-bordered table-striped dataTable" role="grid"
+                    <table id="example1" class="w3-table w3-bordered w3-striped w3-white w3-card-24" role="grid"
                            aria-describedby="example1_info">
                         <thead>
                         <tr role="row">
@@ -47,10 +50,9 @@ use yii\grid\GridView;
                             </th>
                             <th class="sorting text-center" tabindex="0" aria-controls="example1" rowspan="1"
                                 colspan="1"
-                                aria-label="CSS grade: activate to sort column ascending" style="width: 10px">Action
+                                aria-label="CSS grade: activate to sort column ascending" style="width:60px">Action
                             </th>
-
-                        </tr>
+                             </tr>
                         </thead>
                         <tbody>
                         <?php $r = 1;
@@ -62,7 +64,7 @@ use yii\grid\GridView;
                                     <td><?= $querilar->visit->client->surname; ?></td>
                                     <td><?= date("d-m-Y l  H:i:s", $querilar->visit->visit_time); ?></td>
                                     <td class="no-padding text-center">
-                                        <?= Html::a('Qabul', ['/doctor/receive/create?visit_id=' . $querilar->visit_id], ['class' => 'btn btn-success flat']) ?>
+                                        <?= Html::a('Qabul', ['/doctor/receive/create?visit_id=' . $querilar->visit_id], ['class' => 'btn btn-success flat','style'=>'float:left']) ?>
                                         <?= Html::a('Result', ['/doctor/receive/view?visit_id=' . $querilar->visit_id], ['class' => 'btn btn-primary flat']) ?>
                                     </td>
                                 </tr>
@@ -75,11 +77,44 @@ use yii\grid\GridView;
 
 
         </div>
-        <div id="menu1" class="tab-pane fade">
-            <?php
+        <div id="menu1" class="tab-pane fade ">
+            <table border="2" class="w3-table w3-animate-zoom table-responsive table-hover w3-card-16 w3-white">
+                <th>id</th>
+                <th>Ismi</th>
+                <th>Familyasi</th>
+                <th>Qabul Vaqti</th>
+                <th  colspan="2" class="text-center w3-blue" ><center>Amallar</center></th>
 
+
+                <?php
+               foreach($modelss as $qabul):?>
+
+                   <tr>
+                    <td class="w3-green"><?=$qabul->client->id?></td>
+                    <td><?=$qabul->client->name?></td>
+                    <td><?=$qabul->client->lastname?></td>
+                    <td style="width: 30%"><?=date('Y-M-D H:i:s', $qabul->visit_time)?></td>
+                    <td>
+                        <span class="fa fa-spinner w3-spin"></span>
+                        <?=Html::a('Qabul malumotlari',\yii\helpers\Url::to(['receive/view?id='.\app\models\Receive::findOne(['visit_id'=>$qabul->id])->id]),['class'=>'w3-btn w3-green'])?>
+                    </td>
+                       <td>
+                           <?=Html::a('Tarixi',\yii\helpers\Url::to(['about']),['class'=>'w3-btn w3-animate-right w3-blue fa fa-home'])?>
+                       </td>
+                </tr>
+
+               <?php endforeach;?>
+
+             </table>
+            <?php echo
+            LinkPager::widget([
+                'pagination' => $pages,
+                'registerLinkTags' => true,
+                'options'=>['class'=>'pagination'],
+            ]);
             ?>
         </div>
+
 
 
         <?php
@@ -106,5 +141,6 @@ use yii\grid\GridView;
         <!--            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>-->
         <!--        </div>-->
     </div>
-</div>
 
+
+</div>

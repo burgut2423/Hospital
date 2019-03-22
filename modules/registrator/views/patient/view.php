@@ -1,3 +1,5 @@
+
+
 <?php
 
 use yii\bootstrap\Modal;
@@ -12,7 +14,7 @@ $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Patients', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="patient-view">
+<div class="patient-view w3-animate-right">
 
     <h1> Bemor ismi :<?= Html::encode($this->title) ?></h1>
 
@@ -46,5 +48,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= Html::submitButton('Saqlash', ['class' => 'btn btn-success flat']) ?>
     <?php \yii\widgets\ActiveForm::end() ?>
 </div>
+
 
 

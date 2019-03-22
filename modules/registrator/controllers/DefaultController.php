@@ -2,6 +2,9 @@
 
 namespace app\modules\registrator\controllers;
 
+use app\models\User;
+use app\modules\registrator\model\Patient;
+use app\modules\registrator\model\Visit;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
@@ -64,9 +67,25 @@ class DefaultController extends Controller
      * Renders the index view for the module
      * @return string
      */
-
+      public $layout='main';
     public function actionIndex()
     {
-        return $this->render('index');
+           $doctor = User::findAll(['role'=>2]);
+           $counter1 = count($doctor);
+           $admin = User::findAll(['role'=>1]);
+           $counter2 =count($admin);
+           $bemorlar =Patient::find()->all();
+           $visit =Visit::find()->all();
+           $counter4 =count($visit);
+
+            $counter3 = count($bemorlar);
+           return $this->render('index',
+             [
+                 'doctor'=>$counter1,
+                 'admin'=>$counter2,
+                 'bemorlar'=>$counter3,
+                 'visit'=>$counter4,
+             ]
+           );
     }
 }

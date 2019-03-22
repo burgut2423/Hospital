@@ -10,9 +10,9 @@ $this->title = 'Umimiy axvolini kiritish';
 $this->params['breadcrumbs'][] = ['label' => 'Receives', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="receive-create">
+<div class="receive-create w3-table w3-animate-zoom  w3-card-24 w3-silver">
 
-    <h1 class="text-center"><?= Html::encode($this->title) ?></h1>
+  
 
     <?= $this->render('_form', [
         'model' => $model,
