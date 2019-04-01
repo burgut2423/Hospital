@@ -26,10 +26,10 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout'],
+                'only' => ['logout',],
                 'rules' => [
                     [
-                        'actions' => ['logout'],
+                        'actions' => ['logout',],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -92,6 +92,9 @@ class SiteController extends Controller
                 case User::ROLE_DOCTOR:
                     $this->redirect('/doctor');
                     break;
+                case  User::ROLE_REGISTRATOR:
+                    $this->redirect('/registrator');
+                    break;
             }
 
         }
@@ -139,8 +142,10 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-     public function actionMy(){
 
-     }
+    public function actionMy()
+    {
+
+    }
 
 }
