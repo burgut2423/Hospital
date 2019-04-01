@@ -72,7 +72,7 @@ class User extends \yii\db\ActiveRecord  implements  IdentityInterface
         return [
             [['username', 'auth_key', 'password', 'password_reset_token', 'email', 'status', 'created_at', 'upadated_at'], 'required'],
             [['status', 'created_at', 'upadated_at','role'], 'integer'],
-            [['username', 'auth_key', 'password', 'password_reset_token', 'email'], 'string', 'max' => 60],
+            [['auth_key', 'password', 'password_reset_token', 'email'], 'string', 'max' => 60],
             ['status','default','value'=>self::STATUS_ACTIVE],
             ['status','in','range'=>[self::STATUS_ACTIVE,self::STATUS_DELETED]]
         ];
