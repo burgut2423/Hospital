@@ -1,5 +1,11 @@
 <?php
 
+use app\models\Analiz;
+use app\models\AnalizType;
+use app\models\Labs;
+use softark\duallistbox\DualListbox;
+use yii\bootstrap\ActiveForm;
+use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 
@@ -10,33 +16,28 @@ $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Receives', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="receive-view">
+<div class="receive-view ">
 
-        <?=
-            Html::a('Back',\yii\helpers\Url::to('/doctor'),['class'=>'btn w3-btn w3-red']);
-        ?>
+    <?=
+    Html::a('Back', \yii\helpers\Url::to('/doctor'), ['class' => 'btn w3-btn w3-red']);
 
-
-
-    <!--
-        Relation ni  ishlatish uchun   birinana birina  bog'anish qilish kerak
-        yoki     Model da avaldan bog'lanish bo'lsa  unu qo'shimcha  inverseOf  bilan yazilgan ni atib
-                  qo'shimcha Class ga  function qilib baribarish kerak akannnnnnnn ???
-    -->
+    ?>
+    <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
 
 
-        <div class="box box-success box-solid">
-            <div class="box-header with-border">
-                <h3 class="box-title">Umumiy axvoli</h3>
+    <div class="box box-warning">
+        <div class="box-header with-border">
+            <h3 class="box-title">Ko'rik uchun qisqacha ma'lumotlar</h3>
 
-                <div class="box-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                </div>
-                <!-- /.box-tools -->
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-                <?= DetailView::widget([
+            <!-- /.box-tools -->
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body" style="">
+               <?= DetailView::widget([
                     'model' => $model,
                     'attributes' => [
                         'id',
@@ -70,9 +71,65 @@ $this->params['breadcrumbs'][] = $this->title;
                     ],
                 ]) ?>
             </div>
-            <!-- /.box-body -->
+        <!-- /.box-body -->
+    </div>
+
+    <!-- /.box -->
+
+    <div class="box box-default collapsed-box">
+        <div class="box-header with-border">
+            <h3 class="box-title">Bemor ni laborotoyaga yuborish</h3>
+
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                </button>
+            </div>
+            <!-- /.box-tools -->
         </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <?php $form = ActiveForm::begin(); ?>
+
+            <?php
+
+            $selection = [
+                1,
+                1,
+            ];
+            $labs = Analiz::find()->all();
+            $item = ArrayHelper::map($labs, 'analiz_id', 'analiz_name');
+            $options = [
+                'multiple' => true,
+                'size' => 20,
+            ];
+
+            echo $form->field($analiz, 'analiz_id')->widget(
+                DualListbox::className(), [
+                    'selection' => $selection,
+                    'items' => $item,
+                    'options' => $options,
+                    'clientOptions' => [
+                        'moveOnSelect' => false,
+                        'selectedListLabel' => 'Tanlanganlar',
+                        'nonSelectedListLabel' => 'Tanlash..',
+                    ],
+                ]
+            )->label(false);
+            echo  $form->field($analiz,'visit_id')->hiddenInput(['value'=>$model->visit_id])->label(false);
+            echo  $form->field($analiz,'add_time')->hiddenInput(['value'=>time()])->label(false);
+            echo  $form->field($analiz,'end_time')->hiddenInput(['value'=>time()])->label(false);
+            ?>
+            <div class="form-group">
+        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+           </div>
+            <?php ActiveForm::end(); ?>
+
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
 
 
-    <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
 </div>
+
+

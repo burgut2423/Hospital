@@ -10,7 +10,7 @@ use yii\widgets\LinkPager;
 /*  @var $dataProvider yii\data\ActiveDataProvider */
 /* @var  $query mixed app\models\Query */
 /* @var  $querilar ,$mymodel  app\models\Query */
-/*  @var  $qaluqilinganlar app\models\Visit*/
+/*  @var  $qaluqilinganlar app\models\Visit */
 /* @var  $this yii\web\View */
 ?>
 
@@ -23,9 +23,9 @@ use yii\widgets\LinkPager;
         <!--        <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>-->
     </ul>
 
-    <div class="tab-content ">
+    <div class="tab-content tab-danger">
         <div id="home" class="tab-pane fade in active w3-animate-right">
-           <div id="example1_wrapper" class="w3-table w3-bordered w3-striped w3-card-4 ">
+            <div id="example1_wrapper" class="w3-table w3-bordered w3-striped w3-card-4 ">
             </div>
             <div class="w3-row">
                 <div class="col-sm-12">
@@ -52,7 +52,7 @@ use yii\widgets\LinkPager;
                                 colspan="1"
                                 aria-label="CSS grade: activate to sort column ascending" style="width:60px">Action
                             </th>
-                             </tr>
+                        </tr>
                         </thead>
                         <tbody>
                         <?php $r = 1;
@@ -64,7 +64,7 @@ use yii\widgets\LinkPager;
                                     <td><?= $querilar->visit->client->surname; ?></td>
                                     <td><?= date("d-m-Y l  H:i:s", $querilar->visit->visit_time); ?></td>
                                     <td class="no-padding text-center">
-                                        <?= Html::a('Qabul', ['/doctor/receive/create?visit_id=' . $querilar->visit_id], ['class' => 'btn btn-success flat','style'=>'float:left']) ?>
+                                        <?= Html::a('Qabul', ['/doctor/receive/create?visit_id=' . $querilar->visit_id], ['class' => 'btn btn-success flat', 'style' => 'float:left']) ?>
                                         <?= Html::a('Result', ['/doctor/receive/view?visit_id=' . $querilar->visit_id], ['class' => 'btn btn-primary flat']) ?>
                                     </td>
                                 </tr>
@@ -74,8 +74,6 @@ use yii\widgets\LinkPager;
                     </table>
                 </div>
             </div>
-
-
         </div>
         <div id="menu1" class="tab-pane fade ">
             <table border="2" class="w3-table w3-animate-zoom table-responsive table-hover w3-card-16 w3-white">
@@ -83,38 +81,41 @@ use yii\widgets\LinkPager;
                 <th>Ismi</th>
                 <th>Familyasi</th>
                 <th>Qabul Vaqti</th>
-                <th  colspan="2" class="text-center w3-blue" ><center>Amallar</center></th>
+                <th colspan="2" class="text-center w3-blue">
+                    <center>Amallar</center>
+                </th>
 
 
                 <?php
-               foreach($modelss as $qabul):?>
 
-                   <tr>
-                    <td class="w3-green"><?=$qabul->client->id?></td>
-                    <td><?=$qabul->client->name?></td>
-                    <td><?=$qabul->client->lastname?></td>
-                    <td style="width: 30%"><?=date('Y-M-D H:i:s', $qabul->visit_time)?></td>
-                    <td>
-                        <span class="fa fa-spinner w3-spin"></span>
-                        <?=Html::a('Qabul malumotlari',\yii\helpers\Url::to(['receive/view?id='.\app\models\Receive::findOne(['visit_id'=>$qabul->id])->id]),['class'=>'w3-btn w3-green'])?>
-                    </td>
-                       <td>
-                           <?=Html::a('Tarixi',\yii\helpers\Url::to(['about']),['class'=>'w3-btn w3-animate-right w3-blue fa fa-home'])?>
-                       </td>
-                </tr>
+                foreach ($modelss as $qabul):?>
+                    <?php if ($visitlar->one()->inside == 0): ?>
+                        <tr>
+                            <td class="w3-green"><?= $qabul->client->id ?></td>
+                            <td><?= $qabul->client->name ?></td>
+                            <td><?= $qabul->client->lastname ?></td>
+                            <td style="width: 30%"><?= date('Y-M-D H:i:s', $qabul->visit_time) ?></td>
+                            <td>
+                                <span class="fa fa-spinner w3-spin"></span>
+                                <?= Html::a('Qabul malumotlari', \yii\helpers\Url::to(['receive/view?id=' . \app\models\Receive::findOne(['visit_id' => $qabul->id])->id]), ['class' => 'w3-btn w3-green']) ?>
+                            </td>
+                            <td>
+                                <?= Html::a('Tarixi', \yii\helpers\Url::to(['about']), ['class' => 'w3-btn w3-animate-right w3-blue fa fa-home']) ?>
+                            </td>
+                        </tr>
+                    <?php endif; ?>
+                <?php endforeach; ?>
 
-               <?php endforeach;?>
-
-             </table>
+            </table>
             <?php echo
             LinkPager::widget([
                 'pagination' => $pages,
                 'registerLinkTags' => true,
-                'options'=>['class'=>'pagination'],
+                'options' => ['class' => 'pagination'],
+                'nextPageLabel'=>'<i class="glyphicon glyphicon-play"></i>'
             ]);
             ?>
         </div>
-
 
 
         <?php
@@ -140,6 +141,9 @@ use yii\widgets\LinkPager;
         <!--            <h3>Menu 3</h3>-->
         <!--            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>-->
         <!--        </div>-->
+
+
+
     </div>
 
 

@@ -62,15 +62,18 @@ class DefaultController extends Controller
 
     {
         $sorov = Query::find()->where(['user_id' => Yii::$app->user->id])->all();
+        $sanash =count($sorov);
         $querys = Visit::find()->where(['inside'=>0]);
         $countss= clone $querys;
-        $pages =new \yii\data\Pagination(['totalCount'=>$countss->count(),'pageSize'=>5]);
+        $pages =new \yii\data\Pagination(['totalCount'=>$countss->count(),'pageSize'=>8]);
         $pages->pageSizeParam=false;
         $modelss = $querys->offset($pages->offset)->limit($pages->limit)->all();
         return $this->render('index', [
             'query' => $sorov,
+            'sanash'=>$sanash,
             'pages'=>$pages,
             'modelss'=>$modelss,
+            'visitlar'=>$querys,
         ]);
     }
 }
